@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.navbar {
+  padding: 75px 20px;
+  background-color: #1e1a2d;
+  @include flex(center, center);
+  max-width: 110px;
+  border-radius: 30px 0 0 30px;
+  font-size: 15px;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 5;
+}
+
+.nav-content {
+  @include flex(center, start);
+  flex-direction: column;
+  width: auto;
+  gap: 15px;
+}
+
+.nav-link {
+  @include flex(center, center);
+  gap: 15px;
+  color: white;
+  text-align: start;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: white;
+  visibility: hidden;
+}
+
+.nav-active {
+  .dot {
+    visibility: visible;
+  }
+}

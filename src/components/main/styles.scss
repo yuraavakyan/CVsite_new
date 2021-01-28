@@ -1,0 +1,67 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.home {
+  background-image: url("../../images/IMG_2991\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  @include flex(center, center);
+}
+
+.home-content {
+  max-width: 1260px;
+  padding: 30px;
+  @include flex(flex-start, center);
+  width: 100%;
+}
+
+.upper-part {
+  @include flex(center, center);
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.social {
+  @include flex(center, center, column);
+  gap: 28px;
+  height: 100%;
+}
+
+.icon img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.name {
+  font-size: 90px;
+  line-height: 100px;
+}
+
+.professions {
+  font-size: 26px;
+}
+
+.buttons {
+  @include flex(space-between, center);
+  gap: 18px;
+}
+
+.download,
+.contacts {
+  width: 270px;
+  padding: 17px 34px;
+  font-size: 30px;
+}
+
+.download {
+  background-color: #1e1a2d;
+  color: white;
+  border: none;
+}
+
+.contacts {
+  background-color: transparent;
+  border: 1px solid black;
+}

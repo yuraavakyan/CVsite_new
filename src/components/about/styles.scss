@@ -1,0 +1,52 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  @include flex(center, center);
+}
+
+.section-title {
+  font-size: 350px;
+  position: absolute;
+  top: -200px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 1260px;
+  padding: 100px 60px;
+  background-color: #f1f1f1;
+  @include flex(center, center);
+  gap: 50px;
+  border-radius: 30px;
+}
+
+.avatar-section {
+  @include flex(center, center);
+  max-width: 860px;
+  font-size: 45px;
+}
+
+.right {
+  @include flex(center, center, column);
+  gap: 20px;
+}
+
+.right1,
+.right2,
+.right3 {
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+}
+
+.about-text {
+  max-width: 860px;
+  font-size: 30px;
+}

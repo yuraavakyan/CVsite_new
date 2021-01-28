@@ -1,0 +1,10 @@
+@mixin flex($justify-content, $align-items, $direction: row) {
+  display: flex;
+  #{justify-content}: $justify-content;
+  #{align-items}: $align-items;
+  #{flex-direction}: $direction;
+}
+
+@mixin m {
+  max-width: 1080px;
+}
