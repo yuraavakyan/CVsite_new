@@ -11,9 +11,6 @@ function About() {
           <div className="avatar">
             <img src={avatar} alt=""></img>
           </div>
-          <div className="motto">
-            “ being conscientious <br /> makes me happy. ”
-          </div>
         </div>
         <div className="about-text">
           “ Hi, I am Yuri, and I create responsive web sites using modern
