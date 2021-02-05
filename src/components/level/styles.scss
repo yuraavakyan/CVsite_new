@@ -1,0 +1,103 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.level {
+  @include flex(flex-end, center);
+  gap: 15px;
+  font-size: 25px;
+  padding: 10px 0 30px 0;
+}
+
+.level-container {
+  @include flex(flex-start, center);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  width: 60%;
+  height: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.level-title {
+  @include flex(center, center);
+  gap: 5px;
+}
+
+.html,
+.css,
+.JS,
+.ReactJS,
+.NodeJS,
+.SQL,
+.MongoDB,
+.Communications,
+.Loyal,
+.Problem.solving,
+.Team.player,
+.Fast.learner,
+.English,
+.Russian,
+.Chinese {
+  background-color: #1e1a2d;
+  height: 100%;
+  transform: skew(30deg);
+  margin-left: -10px;
+}
+
+.English {
+  width: 100%;
+}
+
+.Russian {
+  width: 100%;
+}
+
+.Chinese {
+  width: 70%;
+}
+
+.Communications {
+  width: 100%;
+}
+
+.Loyal {
+  width: 90%;
+}
+
+.Problem.solving {
+  width: 80%;
+}
+.Fast.learner {
+  width: 90%;
+}
+
+.Team.player {
+  width: 90%;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 90%;
+}
+
+.JS {
+  width: 80%;
+}
+
+.ReactJS {
+  width: 60%;
+}
+
+.NodeJS {
+  width: 50%;
+}
+
+.SQL {
+  width: 60%;
+}
+
+.MongoDB {
+  width: 40%;
+}

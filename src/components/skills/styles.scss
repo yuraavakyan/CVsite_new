@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.skills {
+  padding-top: 100px;
+}
+
+.hard {
+  width: 600px;
+}
+
+.hard-title {
+  font-family: "Wire One";
+  font-size: 45px;
+}
+
+.skills-content {
+  @include flex(center, center, column);
+  gap: 50px;
+}
+
+.first-part {
+  @include flex(center, center);
+  gap: 50px;
+}
