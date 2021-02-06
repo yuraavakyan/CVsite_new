@@ -1,0 +1,69 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.up-part,
+.down-part {
+  @include flex(center, center);
+  gap: 100px;
+  margin-bottom: 50px;
+  height: auto;
+}
+
+.portfolio-item-1,
+.portfolio-item-2,
+.portfolio-item-3,
+.portfolio-item-4 {
+  padding-left: 350px;
+  max-width: 700px;
+  background-color: #f1f1f1;
+  border-radius: 30px 30px 0 30px;
+  position: relative;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+}
+
+.coming {
+  position: absolute;
+  font-size: 200px;
+  top: 24%;
+  right: 1%;
+  z-index: 15;
+  width: 700px;
+  font-family: "Wire One";
+}
+
+.portfolio-item-2 {
+  transform: rotate(180deg);
+  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 30px 0 30px 30px;
+  .item-content {
+    transform: rotate(-180deg);
+  }
+  .coming {
+    transform: rotate(180deg);
+  }
+}
+
+.portfolio-item-4 {
+  transform: rotate(180deg);
+  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 30px 0 30px 30px;
+  .item-content {
+    transform: rotate(-180deg);
+  }
+  .coming {
+    transform: rotate(180deg);
+  }
+}
+
+.item-content {
+  @include flex(center, center, column);
+  gap: 44px;
+  padding: 15px 20px;
+  padding-bottom: 0;
+}
+
+.item-pic {
+  width: 350px;
+  height: 280px;
+  background-color: #1e1a2d;
+}
