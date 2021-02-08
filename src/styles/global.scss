@@ -2,12 +2,22 @@
   box-sizing: border-box;
 }
 
+section {
+  padding-bottom: 50px;
+  @include s {
+    padding-bottom: 20px;
+  }
+}
+
 .section-title {
   font-size: 200px;
   text-align: center;
   font-family: "Wire One";
   z-index: 14;
   color: #1e1a2d;
+  @include s {
+    font-size: 100px;
+  }
 }
 
 h1,

@@ -1,40 +1,76 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/global.scss";
 
+.portfolio {
+  @include flex(center, center, column);
+}
+
 .up-part,
 .down-part {
   @include flex(center, center);
   gap: 100px;
   margin-bottom: 50px;
   height: auto;
+  @include m {
+    flex-direction: column;
+  }
+
+  .down-part {
+    display: none;
+  }
+
+  @include s {
+    margin-bottom: 20px;
+    gap: 30px;
+  }
 }
 
 .portfolio-item-1,
 .portfolio-item-2,
 .portfolio-item-3,
 .portfolio-item-4 {
-  padding-left: 350px;
   max-width: 700px;
   background-color: #f1f1f1;
-  border-radius: 30px 30px 0 30px;
+  border-radius: 30px;
   position: relative;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+
+  @include s {
+    border-radius: 0;
+    min-width: 200px;
+  }
+}
+
+.item-description {
+  @include flex(center, center);
+  p {
+    max-width: 250px;
+  }
+  @include s {
+    p {
+      display: none;
+    }
+  }
 }
 
 .coming {
   position: absolute;
   font-size: 200px;
+  color: #1e1a2d;
   top: 24%;
   right: 1%;
   z-index: 15;
   width: 700px;
   font-family: "Wire One";
+  @include s {
+    font-size: 100px;
+    width: auto;
+  }
 }
 
 .portfolio-item-2 {
   transform: rotate(180deg);
   box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 30px 0 30px 30px;
   .item-content {
     transform: rotate(-180deg);
   }
@@ -43,12 +79,20 @@
   }
 }
 
+.portfolio-item-3 {
+  .item-content {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
 .portfolio-item-4 {
   transform: rotate(180deg);
   box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 30px 0 30px 30px;
   .item-content {
     transform: rotate(-180deg);
+    padding-bottom: 20px;
+    padding-top: 0;
   }
   .coming {
     transform: rotate(180deg);
@@ -57,13 +101,25 @@
 
 .item-content {
   @include flex(center, center, column);
-  gap: 44px;
-  padding: 15px 20px;
-  padding-bottom: 0;
+  gap: 20px;
+  padding: 0 20px;
+  padding-top: 20px;
 }
 
 .item-pic {
   width: 350px;
   height: 280px;
   background-color: #1e1a2d;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include s {
+    width: 100%;
+  }
+}
+
+.port-item-title {
+  font-size: 25px;
 }

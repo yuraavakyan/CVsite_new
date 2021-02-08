@@ -2,8 +2,6 @@
 @import "../../styles/global.scss";
 
 .about {
-  height: 100vh;
-  width: 100vw;
   background-color: white;
   @include flex(center, center, column);
   position: relative;
@@ -16,6 +14,11 @@
   @include flex(center, center);
   gap: 50px;
   border-radius: 30px;
+  @include s {
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .avatar-section {
@@ -41,4 +44,7 @@
 .about-text {
   max-width: 860px;
   font-size: 30px;
+  @include s {
+    font-size: 18px;
+  }
 }

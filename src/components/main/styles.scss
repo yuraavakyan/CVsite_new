@@ -9,6 +9,9 @@
   width: 100vw;
   height: 100vh;
   @include flex(center, center);
+  @include s {
+    height: 100vh;
+  }
 }
 
 .home-content {
@@ -16,18 +19,27 @@
   padding: 30px;
   @include flex(flex-start, center);
   width: 100%;
+  @include s {
+    justify-content: center;
+  }
 }
 
 .upper-part {
   @include flex(center, center);
   height: 100%;
   margin-bottom: 5px;
+  @include s {
+    flex-direction: column;
+  }
 }
 
 .social {
   @include flex(center, center, column);
   gap: 28px;
   height: 100%;
+  @include s {
+    display: none;
+  }
 }
 
 .icon img {
@@ -38,15 +50,26 @@
 .name {
   font-size: 90px;
   line-height: 100px;
+  @include s {
+    font-size: 50px;
+    line-height: normal;
+  }
 }
 
 .professions {
   font-size: 26px;
+  @include s {
+    font-size: 18px;
+  }
 }
 
 .buttons {
   @include flex(space-between, center);
   gap: 18px;
+  @include s {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .download,
@@ -54,6 +77,10 @@
   width: 270px;
   padding: 17px 34px;
   font-size: 30px;
+  @include s {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
 }
 
 .download {

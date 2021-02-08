@@ -12,6 +12,9 @@
   top: 50%;
   margin-top: -160px;
   z-index: 5;
+  @include s {
+    display: none;
+  }
 }
 
 .nav-content {
