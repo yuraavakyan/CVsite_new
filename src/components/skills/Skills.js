@@ -16,12 +16,13 @@ import learning from "../../images/icons/learning.png";
 import china from "../../images/icons/china.png";
 import rus from "../../images/icons/rus.png";
 import en from "../../images/icons/en.png";
+import Title from "../section-title";
 
 function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="section-container">
-        <h2 className="section-title">SKILLS</h2>
+        <Title title="SKILLS" />
         <div className="skills-content">
           <div className="first-part">
             <div className="hard">

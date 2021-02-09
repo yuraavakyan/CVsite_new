@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import Fade from "react-reveal";
 
 function Level(props) {
   return (
@@ -12,7 +13,9 @@ function Level(props) {
       </div>
 
       <div className="level-container">
-        <div className={props.name}></div>
+        <Fade left>
+          <div className={props.name}></div>
+        </Fade>
       </div>
     </div>
   );
