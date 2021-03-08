@@ -4,9 +4,9 @@ import Fade from "react-reveal";
 
 function Title(props) {
   return (
-    <Fade top>
-      <h2 className="section-title">{props.title}</h2>
-    </Fade>
+    <h2 className="section-title" data-aos="fade-up" once="false">
+      {props.title}{" "}
+    </h2>
   );
 }
 

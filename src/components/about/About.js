@@ -1,14 +1,13 @@
 import React from "react";
 import "./styles.scss";
 import avatar from "../../images/avatar1.png";
-import Fade from "react-reveal";
 import Title from "../section-title";
 
 function About() {
   return (
     <section className="about" id="about">
       <Title title="ABOUT" />
-      <div className="about-content">
+      <div className="about-content" data-aos="fade-up" once="false">
         <div className="avatar-section">
           <div className="avatar">
             <img src={avatar} alt=""></img>

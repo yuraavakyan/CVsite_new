@@ -1,6 +1,10 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/global.scss";
 
+.portfolio-container {
+  max-width: 83.3%;
+}
+
 .portfolio {
   @include flex(center, center, column);
 }
@@ -38,13 +42,28 @@
   @include s {
     border-radius: 0;
     min-width: 200px;
+    .item-content {
+      padding: 0;
+    }
   }
 }
 
+.portfolio-item-2,
+.portfolio-item-4 {
+  .item-content {
+    padding: 20px 20px 0 0;
+    @include s {
+      padding: 0;
+    }
+  }
+}
 .item-description {
   @include flex(center, center);
   p {
+    font-weight: 300;
     max-width: 250px;
+    text-align: justify;
+    padding: 5px;
   }
   @include s {
     p {
@@ -68,41 +87,10 @@
   }
 }
 
-.portfolio-item-2 {
-  transform: rotate(180deg);
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
-  .item-content {
-    transform: rotate(-180deg);
-  }
-  .coming {
-    transform: rotate(180deg);
-  }
-}
-
-.portfolio-item-3 {
-  .item-content {
-    padding-top: 0;
-    padding-bottom: 20px;
-  }
-}
-
-.portfolio-item-4 {
-  transform: rotate(180deg);
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
-  .item-content {
-    transform: rotate(-180deg);
-    padding-bottom: 20px;
-    padding-top: 0;
-  }
-  .coming {
-    transform: rotate(180deg);
-  }
-}
-
 .item-content {
   @include flex(center, center, column);
   gap: 20px;
-  padding: 0 20px;
+  padding: 20px 0 0 20px;
   padding-top: 20px;
 }
 

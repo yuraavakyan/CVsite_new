@@ -1,0 +1,23 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/global.scss";
+
+.contacts-wrapper {
+  @include flex(center, center, column);
+  gap: 30px;
+  font-family: "Wire One";
+  font-size: 40px;
+
+  @include m {
+    font-size: 20px;
+  }
+}
+
+.tel-part,
+.mail-part {
+  @include flex(center, center);
+  gap: 20px;
+}
+
+.title-con {
+  font-weight: 600;
+}

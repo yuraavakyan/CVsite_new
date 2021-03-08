@@ -1,47 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.scss";
-import insta from "../../images/icons/instagram.png";
-import facebook from "../../images/icons/facebook.png";
-import git from "../../images/icons/github.png";
-import linked from "../../images/icons/linkedin.png";
-import Fade from "react-reveal";
+import Link from "react-scroll";
+import Contacts from "../contacts";
 
 function Main() {
+  const [state, setState] = useState(false);
+
+  const handleContacts = () => {
+    if (state == false) {
+      setState(true);
+    } else setState(false);
+  };
+
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <Fade left>
-          <div className="main-block">
-            <div className="upper-part">
-              <div className="social">
-                <div className="icon">
-                  <img src={facebook} alt=""></img>
-                </div>
-                <div className="icon">
-                  <img src={insta}></img>
-                </div>
-                <div className="icon">
-                  <img src={git}></img>
-                </div>
-                <div className="icon">
-                  <img src={linked}></img>
-                </div>
+        <div className="main-block" data-aos="fade-left" once="false">
+          <div className="upper-part">
+            {/* <div className="social">
+              <div className="icon">
+                <img src={facebook} alt=""></img>
               </div>
-              <div className="greeting">
-                <div className="name">
-                  Hello, I'm <br /> Yuri Avagyan
-                </div>
-                <div className="professions">
-                  Web design | Software development
-                </div>
+              <div className="icon">
+                <img src={insta}></img>
               </div>
-            </div>
-            <div className="buttons">
-              <button className="download">Download CV</button>
-              <button className="contacts">Contacts</button>
+              <div className="icon">
+                <img src={git}></img>
+              </div>
+              <div className="icon">
+                <img src={linked}></img>
+              </div>
+            </div> */}
+            <div className="greeting">
+              <div className="name">
+                Hello, I'm <br /> Yuri Avagyan
+              </div>
+              <div className="professions">
+                Web design | Software development
+              </div>
             </div>
           </div>
-        </Fade>
+          <div className="buttons">
+            <button className="download">Download CV</button>
+
+            <button className="contacts-btn" onClick={handleContacts}>
+              Contacts
+            </button>
+          </div>
+        </div>
+        <div className={state ? "contacts" : "invisible"}>
+          <Contacts />
+        </div>
       </div>
     </section>
   );

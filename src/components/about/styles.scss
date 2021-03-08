@@ -8,14 +8,14 @@
 }
 
 .about-content {
-  max-width: 1260px;
-  padding: 100px 60px;
+  width: 83.3%;
   background-color: #f1f1f1;
   @include flex(center, center);
   gap: 50px;
   border-radius: 30px;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
-  @include s {
+  padding: 100px 0;
+  @include m {
     flex-direction: column;
     padding: 30px;
     margin-bottom: 20px;
@@ -44,8 +44,11 @@
 
 .about-text {
   max-width: 860px;
-  font-size: 30px;
-  @include s {
+  font-size: 35px;
+  font-weight: 200;
+  text-align: justify;
+  @include m {
+    max-width: 500px;
     font-size: 18px;
   }
 }
