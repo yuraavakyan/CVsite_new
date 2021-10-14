@@ -39,9 +39,9 @@ function App() {
       <div className="skills-ex">
         <Skills />
       </div>
-      <div className="port-ex">
+      {/* <div className="port-ex">
         <Portfolio />
-      </div>
+      </div> */}
       <ContactSection />
 
       <Footer />
