@@ -30,3 +30,119 @@
     flex-direction: column;
   }
 }
+
+.level {
+  @include flex(flex-end, center);
+  gap: 15px;
+  font-size: 25px;
+  padding: 10px 0 30px 0;
+
+  @include s {
+    gap: 10px;
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+.level-icon {
+  height: 30px;
+  img {
+    height: 100%
+  }
+}
+
+.level-container {
+  @include flex(flex-start, center);
+  overflow: hidden;
+  border: 1px solid #e4e4e4;
+  border-radius: 0 15px 15px 0;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  padding: 2px;
+  @include m {
+    max-width: 450px;
+    height: 30px;
+  }
+  @include s {
+    max-width: 250px;
+    height: 25px;
+  }
+}
+
+.skill-title {
+  padding: 2px 36px;
+  position: absolute;
+  font-size: 17px;
+  color: white;
+  font-weight: 200;
+  @include flex(center, center);
+  gap: 5px;
+  p {
+    font-weight: 200;
+  }
+  @include s {
+    flex-direction: column;
+  padding: 2px 5px;
+  }
+}
+
+.l10,
+.l20,
+.l30,
+.l40,
+.l50,
+.l60,
+.l70,
+.l80,
+.l90,
+.l100 {
+  background-color: #1e1a2d;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  position: relative;
+}
+
+.skill-title {
+  
+}
+
+.l10 {
+  width: 10%;
+}
+
+.l20 {
+  width: 20%;
+}
+
+.l30 {
+  width: 30%;
+}
+
+.l40 {
+  width: 40%;
+}
+
+.l50 {
+  width: 50%;
+}
+
+.l60 {
+  width: 60%;
+}
+.l70 {
+  width: 70%;
+}
+
+.l80 {
+  width: 80%;
+}
+
+.l90 {
+  width: 90%;
+}
+
+.l100 {
+  width: 100%;
+}
+

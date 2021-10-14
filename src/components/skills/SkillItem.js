@@ -1,26 +1,27 @@
 import React from "react";
-import "./styles.scss";
 
-function Level(props) {
+const SkillItem = (props) => {
+  const { title, logo, level } = props.skillData;
   return (
     <div className="level">
       <div className="level-title">
-        <p>{props.name}</p>
         <div className="level-icon">
-          <img src={props.pic}></img>
+          <img src={logo}></img>
         </div>
       </div>
-
       <div className="level-container">
         <div
-          className={props.name}
+          className={`l${level}`}
           data-aos="slide-right"
           once="false"
           duration="1000"
         ></div>
+        <div className={"skill-title"}>
+            {title}
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Level;
+export default SkillItem;
