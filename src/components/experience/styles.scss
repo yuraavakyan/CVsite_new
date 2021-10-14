@@ -22,7 +22,7 @@
   @include flex(center, center);
   gap: 10px;
   img {
-    transform: rotate(5deg);
+    max-height: 80px;
   }
   @include s {
     img {
@@ -33,7 +33,7 @@
 
 .experienceItem,
 .experienceItem-reverse {
-  width: 100%;
+  width: 110%;
   max-height: 222px;
   @include flex(center, center);
 }
@@ -42,6 +42,9 @@
   transform: rotate(174deg);
   .text {
     transform: rotate(-180deg);
+  }
+  .experience-item-container {
+    flex-direction: row-reverse;
   }
 }
 
@@ -64,8 +67,7 @@
 }
 
 .experience-item-container-rev {
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.25);
-  transform: rotate(3deg);
+  transform: rotate(-5deg);
 }
 
 .experience-logo-part {
