@@ -6,7 +6,7 @@ const ExperienceItem = (props) => {
   return (
     <div
       className={index % 2 === 0 ? "experienceItem-reverse" : "experienceItem"}
-      data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+      data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
       once="false"
     >
       <div

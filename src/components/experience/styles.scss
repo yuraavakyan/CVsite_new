@@ -39,17 +39,9 @@
 }
 
 .experienceItem-reverse {
-  transform: rotate(174deg);
-  .text {
-    transform: rotate(-180deg);
-  }
   .experience-item-container {
     flex-direction: row-reverse;
   }
-}
-
-.experience-reverse {
-  transform: rotate(-180deg);
 }
 
 .experience-item-container,
@@ -92,8 +84,4 @@
   @include s {
     font-size: 10px;
   }
-}
-
-.experience-text-part-rev {
-  transform: rotate(180deg);
 }

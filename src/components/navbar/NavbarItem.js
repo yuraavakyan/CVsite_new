@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 const NavbarItem = (props) => {
-  const { title, to, isActive } = props.navlinkData;
+  const { title, to} = props.navlinkData
+  const {id, onClick, isActive} = props
 
   return (
-    <div className={isActive ? "nav-link nav-active" : "nav-link"}>
+    <Link to={to} smooth={true}>
+    <div className={isActive ? "nav-link nav-active" : "nav-link"} onClick={() => onClick(id)}>
       <div className="dot"></div>
-      <Link to={to} smooth={true}>
         {title}
-      </Link>
     </div>
+    </Link>
   );
 };
 
