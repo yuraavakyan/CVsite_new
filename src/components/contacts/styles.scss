@@ -12,6 +12,14 @@
   }
 }
 
+.contacts {
+  background-color: white;
+  padding: 60px;
+  // border-radius: 30px;
+  transition: 0.5s;
+}
+
+
 .tel-part,
 .mail-part {
   @include flex(center, center);
@@ -25,4 +33,7 @@
 .write-btn {
   background-color: #1e1a2d;
   color: white;
+  @include s {
+    width: 100px;
+  }
 }

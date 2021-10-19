@@ -20,6 +20,9 @@
     padding: 30px;
     margin-bottom: 20px;
   }
+  @include s {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .avatar-section {
@@ -50,5 +53,9 @@
   @include m {
     max-width: 500px;
     font-size: 18px;
+  }
+  @include m {
+    max-width: 300px;
+    font-size: 14px;
   }
 }

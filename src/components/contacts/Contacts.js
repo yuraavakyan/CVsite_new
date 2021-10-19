@@ -1,11 +1,10 @@
 import React from "react";
-import { Link} from "react-scroll";
+import { Link } from "react-scroll";
 import "./styles.scss";
 
 function Contacts() {
-
   return (
-    <div className="contacts-wrapper">
+    <div className="contacts-wrapper contacts">
       <h2>CONTACTS</h2>
       <div className="info">
         <div className="tel-part">
