@@ -6,7 +6,7 @@
   gap: 30px;
   font-family: "Wire One";
   font-size: 40px;
-
+  position: relative;
   @include m {
     font-size: 20px;
   }
@@ -37,3 +37,16 @@
     width: 100px;
   }
 }
+
+
+.close-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  img {
+  width: 30px;
+
+  }
+}
+

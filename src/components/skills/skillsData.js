@@ -12,6 +12,8 @@ import china from "../../images/icons/china.png";
 import rus from "../../images/icons/rus.png";
 import en from "../../images/icons/en.png";
 import am from "../../images/icons/am.png";
+import vue from "../../images/icons/vue.png";
+import styled from "../../images/icons/styled.png";
 
 
 export const hardSkills = [
@@ -42,12 +44,12 @@ export const hardSkills = [
     },
     {
         title: 'Vue.js',
-        logo: js,
+        logo: vue,
         level: 60,
     },
     {
         title: 'Styled Components',
-        logo: js,
+        logo: styled,
         level: 60,
     },
 ]

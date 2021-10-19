@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./styles.scss";
-import Link from "react-scroll";
 import Contacts from "../contacts";
 
 function Main() {
@@ -9,6 +8,10 @@ function Main() {
   const handleContacts = () => {
     setShowContacts(!showContacts);
   };
+
+  const closeContacts = () => {
+    setShowContacts(false)
+  }
 
   return (
     <section className="home" id="home">
@@ -34,7 +37,7 @@ function Main() {
           </div>
         </div>
         {
-          showContacts && <Contacts />
+          showContacts && <Contacts closeContacts={closeContacts}/>
         }
       </div>
     </section>
