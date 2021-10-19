@@ -26,7 +26,7 @@ export const navbarLinks = [
   },
   {
     title: "Contacts",
-    to: "contacts",
+    to: "contact",
     id: 6,
   },
 ];

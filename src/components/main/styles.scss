@@ -17,7 +17,7 @@
 .contacts {
   background-color: white;
   padding: 60px;
-  border-radius: 30px;
+  // border-radius: 30px;
   transition: 0.5s;
 }
 
@@ -84,11 +84,17 @@
   padding: 17px 34px;
   font-size: 40px;
   font-weight: 600;
+  cursor: pointer;
   @include s {
     font-size: 13px;
     padding: 5px 15px;
   }
   outline: none;
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.1s;
+  transform: scale(1.01);
+  }
 }
 
 .download {
@@ -97,19 +103,19 @@
   border: none;
 }
 
-.download:hover {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-  transition: 0.5s;
-}
+// .download:hover {
+//   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+//   transform: scale(1.05);
+//   transition: 0.1s;
+// }
 
 .contacts-btn {
   background-color: transparent;
   border: 1px solid black;
 }
 
-.contacts-btn:hover {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  transform: scale(1.05);
-}
+// .contacts-btn:hover {
+//   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+//   transition: 0.5s;
+//   transform: scale(1.05);
+// }

@@ -1,7 +1,9 @@
 import React from "react";
+import { Link} from "react-scroll";
 import "./styles.scss";
 
 function Contacts() {
+
   return (
     <div className="contacts-wrapper">
       <h2>CONTACTS</h2>
@@ -15,7 +17,9 @@ function Contacts() {
           <span className="tel">yura.avakyan372@yandex.ru</span>
         </div>
       </div>
-      <button className="contacts-btn">Write to me</button>
+      <Link to={"contact"} smooth={true}>
+        <button className="contacts-btn write-btn">Write to me</button>
+      </Link>
     </div>
   );
 }

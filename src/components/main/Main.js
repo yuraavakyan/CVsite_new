@@ -41,8 +41,7 @@ function Main() {
             </div>
           </div>
           <div className="buttons">
-            <button className="download">Download CV</button>
-
+            <a href="/public_html/cv.pdf" download><button className="download">Download CV</button></a>
             <button className="contacts-btn" onClick={handleContacts}>
               Contacts
             </button>
