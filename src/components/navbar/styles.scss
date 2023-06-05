@@ -19,7 +19,7 @@
 }
 
 .nav-content {
-  @include flex(center, start);
+  @include flex(center, flex-start);
   flex-direction: column;
   width: auto;
   gap: 15px;

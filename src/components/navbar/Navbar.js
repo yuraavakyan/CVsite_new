@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./styles.scss";
 import { navbarLinks } from "./navbarData";
 import NavbarItem from "./NavbarItem";

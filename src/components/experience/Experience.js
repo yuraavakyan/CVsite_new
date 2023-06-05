@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles.scss";
 import Title from "../section-title";
 import { experienceDataArray } from "./experienceData";
@@ -15,7 +15,7 @@ const Experience = () => {
           {
             experienceDataArray.map((item, index) => {
               return (
-                <ExperienceItem itemData={item} index={index} key={item.logoTitle}/>
+                <ExperienceItem itemData={item} index={index} key={item.logoTitle} />
               )
             })
           }

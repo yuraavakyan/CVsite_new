@@ -6,7 +6,7 @@ const SkillItem = (props) => {
     <div className="level">
       <div className="level-title">
         <div className="level-icon">
-          <img src={logo}></img>
+          <img src={logo} alt="logo"></img>
         </div>
       </div>
       <div className="level-container">
@@ -17,7 +17,7 @@ const SkillItem = (props) => {
           duration="1000"
         ></div>
         <div className={"skill-title"}>
-            {title}
+          {title}
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ function Main() {
             </div>
           </div>
           <div className="buttons">
-            <a href="/public_html/cv.pdf" download>
+            <a href="files/YuriAvagyanCurrent.pdf" download>
               <button className="download">Download CV</button>
             </a>
             <button className="contacts-btn" onClick={handleContacts}>
@@ -37,7 +37,7 @@ function Main() {
           </div>
         </div>
         {
-          showContacts && <Contacts closeContacts={closeContacts}/>
+          showContacts && <Contacts closeContacts={closeContacts} />
         }
       </div>
     </section>

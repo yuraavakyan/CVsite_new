@@ -10,7 +10,7 @@ const PortfolioItem = (props) => {
         <div className="item-description">
           <p>{description}</p>
           <div className="item-pic">
-            <img src={pic}></img>
+            <img src={pic} alt="picture"></img>
           </div>
         </div>
       </div>

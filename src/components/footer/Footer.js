@@ -24,16 +24,16 @@ function Footer() {
           </div>
           <div className="footer-social">
             <div className="icon">
-              <img src={facebook} alt=""></img>
+              <img src={facebook} alt="facebook"></img>
             </div>
             <div className="icon">
-              <img src={insta}></img>
+              <img src={insta} alt="instagram"></img>
             </div>
             <div className="icon">
-              <img src={git}></img>
+              <img src={git} alt="github"></img>
             </div>
             <div className="icon">
-              <img src={linked}></img>
+              <img src={linked} alt="linkedin"></img>
             </div>
           </div>
           <div className="rights">Yuri Avagyan. 2020 All rights reserved</div>

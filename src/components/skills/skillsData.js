@@ -14,13 +14,22 @@ import en from "../../images/icons/en.png";
 import am from "../../images/icons/am.png";
 import vue from "../../images/icons/vue.png";
 import styled from "../../images/icons/styled.png";
+import ts from "../../images/icons/ts.png";
+import next from "../../images/icons/next.png";
+
+
 
 
 export const hardSkills = [
     {
         title: 'JS',
         logo: js,
-        level: 80,
+        level: 90,
+    },
+    {
+        title: 'Typescript',
+        logo: ts,
+        level: 70,
     },
     {
         title: 'HTML',
@@ -30,28 +39,35 @@ export const hardSkills = [
     {
         title: 'CSS',
         logo: css,
+        level: 90,
+    },
+    {
+        title: 'Styled Components',
+        logo: styled,
         level: 80,
     },
     {
         title: 'React.js',
         logo: react,
-        level: 70,
+        level: 90,
+    },
+    {
+        title: 'Vue.js',
+        logo: vue,
+        level: 30,
+    },
+    {
+        title: 'Next.js',
+        logo: next,
+        level: 60,
     },
     {
         title: 'Node.js',
         logo: node,
         level: 60,
     },
-    {
-        title: 'Vue.js',
-        logo: vue,
-        level: 60,
-    },
-    {
-        title: 'Styled Components',
-        logo: styled,
-        level: 60,
-    },
+
+
 ]
 
 export const softSkills = [

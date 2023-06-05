@@ -19,7 +19,7 @@ const ExperienceItem = (props) => {
         <div className="experience-logo-part">
           <p className="experience-item-title">{logoTitle}</p>
           <div className="experience-item-logo ">
-            <img src={logo}></img>
+            <img src={logo} alt="logo"></img>
           </div>
         </div>
         <div className="experience-text-part">

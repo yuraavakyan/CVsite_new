@@ -6,12 +6,12 @@ import close from "../../images/icons/close.png";
 
 function Contacts(props) {
 
-  const {closeContacts} = props
+  const { closeContacts } = props
 
   return (
     <div className="contacts-wrapper contacts">
       <div className="close-btn" onClick={closeContacts}>
-        <img src={close}/>
+        <img src={close} alt="close" />
       </div>
       <h2>CONTACTS</h2>
       <div className="info">
